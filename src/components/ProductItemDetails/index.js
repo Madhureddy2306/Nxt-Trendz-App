@@ -115,6 +115,7 @@ class ProductItemDetails extends Component {
     <CartContext.Consumer>
       {value => {
         const {productData, quantity, similarProductsData} = this.state
+
         const {
           availability,
           brand,
@@ -164,6 +165,7 @@ class ProductItemDetails extends Component {
                     className="quantity-controller-button"
                     onClick={this.onDecrementQuantity}
                     data-testid="minus"
+                    aria-label="Save"
                   >
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
@@ -173,6 +175,7 @@ class ProductItemDetails extends Component {
                     className="quantity-controller-button"
                     onClick={this.onIncrementQuantity}
                     data-testid="plus"
+                    aria-label="Save"
                   >
                     <BsPlusSquare className="quantity-controller-icon" />
                   </button>
